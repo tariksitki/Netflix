@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Indie+Flower&family=Lobster&family=Neonderthaw&family=Rubik+Beastly&family=Sorts+Mill+Goudy:ital@1&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Indie+Flower&family=Lobster&family=Neonderthaw&family=Rubik+Beastly&family=Sorts+Mill+Goudy:ital@1&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <header id="header">       <!-- Dikkat margin auto degil text align center-->
+            <h1 id="title"> NET<span>FLIX</span></h1>
+            <h3 id="description">Thank you for signing up to Netflix. Tell me more about yourself</h3>
+        </header>
+
+        <section id="survey-form-container">
+
+            <form action="result.html">
+                <div class="input-box">
+                    <label for="name">Name</label> <br>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" >
+                   
+                </div>
+
+                
+                <div class="input-box"> 
+                    <label for="age">Age</label> <br>
+                    <input type="number" id="age" name="age" placeholder="Enter Your Age" 
+                    min="18" max="55">
+                    
+                </div>
+
+                <div class="input-box"> 
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter Your E-Mail" >
+                    
+                </div>
+
+
+                <div class="input-box"> 
+                    <label for="content-type">Content Type</label>  <br>
+                    <select name="content-type" id="content-type">
+                        <option value="movies">Movies</option>
+                        <option value="series" selected>Series</option>
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="">Movie Type</label> <br>
+
+                    <input type="checkbox" name="movie-type" id="comedy" value="Comedy" checked>
+                    <label for="comedy">Comedy</label> <br>
+
+                    <input type="checkbox" name="movie-type" id="action" value="action">
+                    <label for="action">Action</label> <br>
+
+                    <input type="checkbox" name="movie-type" id="romance" value="romance" checked>
+                    <label for="romance">Romance</label>
+                    
+                </div>
+
+
+                <div class="input-box">
+                    <label for="">Gender</label> <br>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>  <br>
+
+                    <input type="radio" name="gender" id="female" value="female" checked>
+                    <label for="female">Female</label> <br>
+
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label>
+
+                    <!-- Not: radio da value eklemezsek database de sadece on yazar secili olan-->
+                </div>
+
+
+
+
+                <div class="feedback">
+
+                    <label for="">Feedback</label> <br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="5" 
+                    placeholder="any comment" maxlength="10">
+
+                    </textarea>
+                </div>
+
+
+
+
+                <div id="divbutton">
+                    <input type="submit" id="button" value="Send">
+                </div>  
+            </form>
+        </section>
+    </div>
+
+
+
+ 
+
+
+
+    
+</body>
+</html>
